@@ -33,10 +33,20 @@
       },
       "arcLength": 360,
       "authorOptions": [],
-      "backdropColor": [1, 1, 1, 0.5],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
       "border": false,
       "borderBackdrop": "Blizzard Tooltip",
-      "borderColor": [0, 0, 0, 1],
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
       "borderEdge": "Square Full White",
       "borderInset": 1,
       "borderOffset": 4,
@@ -47,19 +57,17 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Tranquility",
-        "Incarnation: Tree of Life",
-        "Convoke the Spirits",
-        "stimulus_resto_druid_hotw"
+        "stimulus_resto_druid_tranquil_clearcasting_1",
+        "stimulus_resto_druid_tranquil_clearcasting_2"
       ],
       "frameStrata": 1,
       "fullCircle": true,
-      "gridType": "HU",
+      "gridType": "RD",
       "gridWidth": 5,
-      "grow": "GRID",
-      "id": "stimulus_resto_druid_big_cds",
+      "grow": "HORIZONTAL",
+      "id": "stimulus_resto_tranquil_mind",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "limit": 5,
       "load": {
         "class": {
@@ -81,21 +89,14 @@
       "rotation": 0,
       "rowSpace": 1,
       "scale": 1,
-      "selfPoint": "BOTTOM",
-      "semver": "1.0.1",
+      "selfPoint": "CENTER",
+      "semver": "1.0.2",
       "sort": "none",
-      "sortHybridTable": {
-        "Convoke the Spirits": false,
-        "Incarnation: Tree of Life": false,
-        "Tranquility": false,
-        "stimulus_resto_druid_hotw": false
-      },
-      "source": "import",
       "space": 2,
       "stagger": 0,
       "stepAngle": 15,
       "subRegions": [],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": [
         {
           "trigger": {
@@ -111,10 +112,10 @@
           "untrigger": []
         }
       ],
-      "uid": "o8HxQh0)hR9",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "uid": "vOQn9h(2QOY",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useLimit": false,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "xOffset": 0,
       "yOffset": -120
@@ -151,13 +152,979 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "backgroundColor": [
+        0.16078431904316,
+        0.16862745583057,
+        0.15686275064945,
+        1
+      ],
+      "barColor": [
+        0.16078431904316,
+        0.16862745583057,
+        0.15686275064945,
+        0.4175341129303
+      ],
+      "barColor2": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "barColor",
+              "value": [
+                0,
+                0.47058826684952,
+                0.76470595598221,
+                1
+              ]
+            },
+            {
+              "property": "backgroundColor",
+              "value": [
+                0,
+                0.47058826684952,
+                0.76470595598221,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "value": "1",
+            "variable": "stacks"
+          }
+        }
+      ],
+      "config": [],
+      "desaturate": false,
+      "enableGradient": false,
+      "frameStrata": 1,
+      "gradientOrientation": "HORIZONTAL",
+      "height": 5,
+      "icon": false,
+      "iconSource": -1,
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "icon_side": "RIGHT",
+      "id": "stimulus_resto_druid_tranquil_clearcasting_1",
+      "information": [],
+      "internalVersion": 83,
+      "inverse": false,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "class_and_spec": {
+          "single": 105
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": {
+            "114808": true
+          }
+        },
+        "use_class_and_spec": true,
+        "use_never": false,
+        "use_petbattle": false,
+        "use_talent": false,
+        "use_vehicle": false,
+        "use_vehicleUi": false
+      },
+      "orientation": "HORIZONTAL",
+      "parent": "stimulus_resto_tranquil_mind",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "aurabar",
+      "selfPoint": "CENTER",
+      "semver": "1.0.2",
+      "spark": false,
+      "sparkBlendMode": "ADD",
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "sparkHeight": 30,
+      "sparkHidden": "NEVER",
+      "sparkOffsetX": 0,
+      "sparkOffsetY": 0,
+      "sparkRotation": 0,
+      "sparkRotationMode": "AUTO",
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "sparkWidth": 10,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "anchor_area": "bar",
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 0,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        }
+      ],
+      "texture": "Clean",
+      "textureSource": "LSM",
+      "tocversion": 110100,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "auraspellids": [
+              "16870"
+            ],
+            "debuffType": "HELPFUL",
+            "event": "Power",
+            "matchesShowOn": "showAlways",
+            "names": [],
+            "spellIds": [],
+            "stacks": "1",
+            "stacksOperator": ">=",
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player",
+            "useExactSpellId": true,
+            "useStacks": false,
+            "use_absorbHealMode": true,
+            "use_absorbMode": true,
+            "use_unit": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10
+      },
+      "uid": "yyolBpkxK5n",
+      "url": "https://wago.io/CiBZULRF_/3",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "version": 3,
+      "wagoID": "CiBZULRF_",
+      "width": 100,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "backgroundColor": [
+        0.16078431904316,
+        0.16862745583057,
+        0.15686275064945,
+        1
+      ],
+      "barColor": [
+        0.16078431904316,
+        0.16862745583057,
+        0.15686275064945,
+        0.4175341129303
+      ],
+      "barColor2": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "barColor",
+              "value": [
+                0,
+                0.47058826684952,
+                0.76470595598221,
+                1
+              ]
+            },
+            {
+              "property": "backgroundColor",
+              "value": [
+                0,
+                0.47058826684952,
+                0.76470595598221,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "op": ">=",
+            "trigger": 1,
+            "value": "2",
+            "variable": "stacks"
+          }
+        }
+      ],
+      "config": [],
+      "desaturate": false,
+      "enableGradient": false,
+      "frameStrata": 1,
+      "gradientOrientation": "HORIZONTAL",
+      "height": 5,
+      "icon": false,
+      "iconSource": -1,
+      "icon_color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "icon_side": "RIGHT",
+      "id": "stimulus_resto_druid_tranquil_clearcasting_2",
+      "information": [],
+      "internalVersion": 83,
+      "inverse": false,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "class_and_spec": {
+          "single": 105
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": {
+            "114808": true
+          }
+        },
+        "use_class_and_spec": true,
+        "use_never": false,
+        "use_petbattle": false,
+        "use_talent": false,
+        "use_vehicle": false,
+        "use_vehicleUi": false
+      },
+      "orientation": "HORIZONTAL",
+      "parent": "stimulus_resto_tranquil_mind",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "aurabar",
+      "selfPoint": "CENTER",
+      "semver": "1.0.2",
+      "spark": false,
+      "sparkBlendMode": "ADD",
+      "sparkColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "sparkHeight": 30,
+      "sparkHidden": "NEVER",
+      "sparkOffsetX": 0,
+      "sparkOffsetY": 0,
+      "sparkRotation": 0,
+      "sparkRotationMode": "AUTO",
+      "sparkTexture": "Interface\\CastingBar\\UI-CastingBar-Spark",
+      "sparkWidth": 10,
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "type": "subforeground"
+        },
+        {
+          "anchor_area": "bar",
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 0,
+          "border_size": 1,
+          "border_visible": true,
+          "type": "subborder"
+        }
+      ],
+      "texture": "Clean",
+      "textureSource": "LSM",
+      "tocversion": 110100,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "auraspellids": [
+              "16870"
+            ],
+            "debuffType": "HELPFUL",
+            "event": "Power",
+            "matchesShowOn": "showAlways",
+            "names": [],
+            "spellIds": [],
+            "stacks": "1",
+            "stacksOperator": ">=",
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player",
+            "useExactSpellId": true,
+            "useStacks": false,
+            "use_absorbHealMode": true,
+            "use_absorbMode": true,
+            "use_unit": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10
+      },
+      "uid": "7Pu0dKvZlIo",
+      "url": "https://wago.io/CiBZULRF_/3",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "version": 3,
+      "wagoID": "CiBZULRF_",
+      "width": 100,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "align": "CENTER",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animate": false,
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "arcLength": 360,
+      "authorOptions": [],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "border": false,
+      "borderBackdrop": "Blizzard Tooltip",
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "borderEdge": "Square Full White",
+      "borderInset": 1,
+      "borderOffset": 4,
+      "borderSize": 2,
+      "centerType": "LR",
+      "columnSpace": 1,
+      "conditions": [],
+      "config": [],
+      "constantFactor": "RADIUS",
+      "controlledChildren": [
+        "stimulus_resto_druid_hotw",
+        "Ironbark",
+        "Tranquility",
+        "Incarnation: Tree of Life",
+        "Convoke the Spirits",
+        "Flourish",
+        "stimulus_resto_druid_Innervate"
+      ],
+      "frameStrata": 1,
+      "fullCircle": true,
+      "gridType": "LU",
+      "gridWidth": 5,
+      "grow": "GRID",
+      "id": "stimulus_resto_druid_cds",
+      "information": [],
+      "internalVersion": 83,
+      "limit": 5,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        }
+      },
+      "parent": "Stimulus_Resto_Druid",
+      "radius": 200,
+      "regionType": "dynamicgroup",
+      "rotation": 0,
+      "rowSpace": 1,
+      "scale": 1,
+      "selfPoint": "BOTTOMRIGHT",
+      "semver": "1.0.2",
+      "sort": "none",
+      "sortHybridTable": {
+        "Convoke the Spirits": false,
+        "Incarnation: Tree of Life": false,
+        "Tranquility": false,
+        "stimulus_resto_druid_hotw": false
+      },
+      "source": "import",
+      "space": 2,
+      "stagger": 0,
+      "stepAngle": 15,
+      "subRegions": [],
+      "tocversion": 110100,
+      "triggers": [
+        {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Health",
+            "names": [],
+            "spellIds": [],
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "aura2",
+            "unit": "player"
+          },
+          "untrigger": []
+        }
+      ],
+      "uid": "o8HxQh0)hR9",
+      "url": "https://wago.io/CiBZULRF_/3",
+      "useLimit": false,
+      "version": 3,
+      "wagoID": "CiBZULRF_",
+      "xOffset": -240,
+      "yOffset": -115
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 0,
+            "variable": "spellUsable"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": false,
+      "desaturate": false,
+      "frameStrata": 1,
+      "height": 32,
+      "icon": true,
+      "iconSource": -1,
+      "id": "stimulus_resto_druid_hotw",
+      "information": [],
+      "internalVersion": 83,
+      "inverse": true,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "class_and_spec": {
+          "multi": [],
+          "single": 105
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": {
+            "103309": true
+          }
+        },
+        "use_class_and_spec": true,
+        "use_petbattle": false,
+        "use_talent": false,
+        "use_vehicle": false,
+        "use_vehicleUi": false
+      },
+      "parent": "stimulus_resto_druid_cds",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.0.2",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 12,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%s",
+          "text_text_format_s_format": "none",
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 1,
+          "glowType": "buttonOverlay",
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
+        }
+      ],
+      "tocversion": 110100,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "names": [],
+            "spellIds": [],
+            "spellName": 319454,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "spell",
+            "unit": "player",
+            "use_genericShowOn": true,
+            "use_spellName": true,
+            "use_track": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10
+      },
+      "uid": "(CY0XQzVAHr",
+      "url": "https://wago.io/CiBZULRF_/3",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 3,
+      "wagoID": "CiBZULRF_",
+      "width": 32,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 0,
+            "variable": "spellUsable"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": false,
+      "desaturate": false,
+      "frameStrata": 1,
+      "height": 32,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Ironbark",
+      "information": [],
+      "internalVersion": 83,
+      "inverse": true,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "class_and_spec": {
+          "multi": [],
+          "single": 105
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": {
+            "103141": true
+          }
+        },
+        "use_class_and_spec": true,
+        "use_never": false,
+        "use_petbattle": false,
+        "use_talent": false,
+        "use_vehicle": false,
+        "use_vehicleUi": false
+      },
+      "parent": "stimulus_resto_druid_cds",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.0.2",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 12,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%s",
+          "text_text_format_s_format": "none",
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 1,
+          "glowType": "buttonOverlay",
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
+        }
+      ],
+      "tocversion": 110100,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "names": [],
+            "realSpellName": "Ironbark",
+            "spellIds": [],
+            "spellName": 102342,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "spell",
+            "unit": "player",
+            "use_genericShowOn": true,
+            "use_spellName": true,
+            "use_track": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10
+      },
+      "uid": "BA)1NRM9FBl",
+      "url": "https://wago.io/CiBZULRF_/3",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 3,
+      "wagoID": "CiBZULRF_",
+      "width": 32,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -179,7 +1146,7 @@
       "iconSource": -1,
       "id": "Tranquility",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
       "keepAspectRatio": false,
       "load": {
@@ -208,11 +1175,14 @@
         "use_vehicle": false,
         "use_vehicleUi": false
       },
-      "parent": "stimulus_resto_druid_big_cds",
-      "progressSource": [-1, ""],
+      "parent": "stimulus_resto_druid_cds",
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -221,17 +1191,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -243,7 +1223,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -257,7 +1242,7 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
@@ -281,11 +1266,11 @@
         "activeTriggerMode": -10
       },
       "uid": "rrDJF5Q0kHS",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -324,13 +1309,23 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -352,7 +1347,7 @@
       "iconSource": -1,
       "id": "Incarnation: Tree of Life",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
       "keepAspectRatio": false,
       "load": {
@@ -381,11 +1376,14 @@
         "use_vehicle": false,
         "use_vehicleUi": false
       },
-      "parent": "stimulus_resto_druid_big_cds",
-      "progressSource": [-1, ""],
+      "parent": "stimulus_resto_druid_cds",
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -394,17 +1392,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -416,7 +1424,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -430,7 +1443,7 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
@@ -454,11 +1467,11 @@
         "activeTriggerMode": -10
       },
       "uid": "2yE2kKFsA10",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -497,13 +1510,23 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -525,9 +1548,9 @@
       "iconSource": -1,
       "id": "Convoke the Spirits",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
-      "keepAspectRatio": false,
+      "keepAspectRatio": true,
       "load": {
         "class": {
           "multi": []
@@ -554,11 +1577,14 @@
         "use_vehicle": false,
         "use_vehicleUi": false
       },
-      "parent": "stimulus_resto_druid_big_cds",
-      "progressSource": [-1, ""],
+      "parent": "stimulus_resto_druid_cds",
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -567,17 +1593,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -589,7 +1625,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -601,9 +1642,22 @@
           "glowYOffset": 0,
           "type": "subglow",
           "useGlowColor": false
+        },
+        {
+          "border_color": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "border_edge": "Square Full White",
+          "border_offset": 0,
+          "border_size": 2,
+          "border_visible": true,
+          "type": "subborder"
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
@@ -629,11 +1683,212 @@
         "activeTriggerMode": -10
       },
       "uid": "uFmnCLacfDE",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
+      "wagoID": "CiBZULRF_",
+      "width": 32,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0.3
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 0,
+            "variable": "spellUsable"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": false,
+      "desaturate": false,
+      "frameStrata": 1,
+      "height": 32,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Flourish",
+      "information": [],
+      "internalVersion": 83,
+      "inverse": true,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "class_and_spec": {
+          "multi": [],
+          "single": 105
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": {
+            "123776": true
+          }
+        },
+        "use_class_and_spec": true,
+        "use_never": false,
+        "use_petbattle": false,
+        "use_talent": false,
+        "use_vehicle": false,
+        "use_vehicleUi": false
+      },
+      "parent": "stimulus_resto_druid_cds",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.0.2",
+      "source": "import",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 12,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%s",
+          "text_text_format_s_format": "none",
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 1,
+          "glowType": "buttonOverlay",
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
+        }
+      ],
+      "tocversion": 110100,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "names": [],
+            "realSpellName": "Flourish",
+            "spellIds": [],
+            "spellName": 197721,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "spell",
+            "unit": "player",
+            "use_genericShowOn": true,
+            "use_spellName": true,
+            "use_track": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10
+      },
+      "uid": "SeEMXhKtshk",
+      "url": "https://wago.io/CiBZULRF_/3",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -672,19 +1927,73 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 2,
+            "value": 1,
+            "variable": "insufficientResources"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                0.5,
+                0.5,
+                0.5,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 2,
+            "value": 1,
+            "variable": "onCooldown"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "inverse",
+              "value": false
+            },
+            {
+              "property": "sub.3.glow",
+              "value": true
+            },
+            {
+              "property": "color",
+              "value": [
+                1,
+                1,
+                1,
+                1
+              ]
             }
           ],
           "check": {
             "trigger": 1,
-            "value": 0,
-            "variable": "spellUsable"
+            "value": 1,
+            "variable": "show"
           }
         }
       ],
@@ -698,9 +2007,9 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "stimulus_resto_druid_hotw",
+      "id": "stimulus_resto_druid_Innervate",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
       "keepAspectRatio": false,
       "load": {
@@ -719,21 +2028,20 @@
         },
         "talent": {
           "multi": {
-            "103309": true
+            "103323": true
           }
         },
         "use_class_and_spec": true,
-        "use_petbattle": false,
-        "use_talent": false,
-        "use_vehicle": false,
-        "use_vehicleUi": false
+        "use_talent": false
       },
-      "parent": "stimulus_resto_druid_big_cds",
-      "progressSource": [-1, ""],
+      "parent": "stimulus_resto_druid_cds",
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
-      "source": "import",
+      "semver": "1.0.2",
       "subRegions": [
         {
           "type": "subbackground"
@@ -741,17 +2049,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -763,7 +2081,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -777,34 +2100,47 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
+            "auranames": [
+              "29166"
+            ],
             "debuffType": "HELPFUL",
-            "event": "Cooldown Progress (Spell)",
-            "genericShowOn": "showAlways",
+            "event": "Health",
+            "matchesShowOn": "showOnActive",
             "names": [],
+            "ownOnly": true,
             "spellIds": [],
-            "spellName": 319454,
             "subeventPrefix": "SPELL",
             "subeventSuffix": "_CAST_START",
-            "type": "spell",
+            "type": "aura2",
             "unit": "player",
-            "use_genericShowOn": true,
-            "use_spellName": true,
-            "use_track": true
+            "unitExists": false,
+            "useName": true
           },
           "untrigger": []
         },
-        "activeTriggerMode": -10
+        "2": {
+          "trigger": {
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "spellName": 29166,
+            "type": "spell",
+            "use_genericShowOn": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10,
+        "disjunctive": "any"
       },
-      "uid": "(CY0XQzVAHr",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "uid": ")rbM6KoDSr3",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -844,10 +2180,20 @@
       },
       "arcLength": 360,
       "authorOptions": [],
-      "backdropColor": [1, 1, 1, 0.5],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
       "border": false,
       "borderBackdrop": "Blizzard Tooltip",
-      "borderColor": [0, 0, 0, 1],
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
       "borderEdge": "Square Full White",
       "borderInset": 1,
       "borderOffset": 4,
@@ -859,6 +2205,7 @@
       "constantFactor": "RADIUS",
       "controlledChildren": [
         "stimulus_resto_druid_skull_bash",
+        "stimulus_resto_druid_Natures_Cure",
         "stimulus_resto_druid_barkskin",
         "stimulus_resto_druid_renewal",
         "stimulus_resto_druid_stampeding_roar",
@@ -873,7 +2220,7 @@
       "grow": "DOWN",
       "id": "stimulus_resto_druid_right_cds",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "limit": 5,
       "load": {
         "class": {
@@ -896,7 +2243,7 @@
       "rowSpace": 1,
       "scale": 1,
       "selfPoint": "TOP",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "sort": "none",
       "sortHybridTable": {
         "stimulus_resto_druid_barkskin": false,
@@ -912,7 +2259,7 @@
       "stagger": 0,
       "stepAngle": 15,
       "subRegions": [],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": [
         {
           "trigger": {
@@ -929,9 +2276,9 @@
         }
       ],
       "uid": "PdCetV(Yczr",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useLimit": false,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "xOffset": 220,
       "yOffset": 120
@@ -968,13 +2315,23 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -996,7 +2353,7 @@
       "iconSource": -1,
       "id": "stimulus_resto_druid_skull_bash",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
       "keepAspectRatio": false,
       "load": {
@@ -1025,10 +2382,13 @@
         "use_vehicleUi": false
       },
       "parent": "stimulus_resto_druid_right_cds",
-      "progressSource": [-1, ""],
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -1037,17 +2397,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -1059,7 +2429,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -1073,7 +2448,7 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
@@ -1094,11 +2469,11 @@
         "activeTriggerMode": -10
       },
       "uid": "myMCLf7)ovH",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -1137,13 +2512,215 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 0,
+            "variable": "spellUsable"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": false,
+      "desaturate": false,
+      "frameStrata": 1,
+      "height": 32,
+      "icon": true,
+      "iconSource": -1,
+      "id": "stimulus_resto_druid_Natures_Cure",
+      "information": [],
+      "internalVersion": 83,
+      "inverse": true,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "class_and_spec": {
+          "multi": [],
+          "single": 105
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": []
+        },
+        "use_class_and_spec": true
+      },
+      "parent": "stimulus_resto_druid_right_cds",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.0.2",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 12,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%s",
+          "text_text_format_s_format": "none",
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 1,
+          "glowType": "buttonOverlay",
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
+        }
+      ],
+      "tocversion": 110100,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showOnCooldown",
+            "names": [],
+            "spellIds": [],
+            "spellName": 88423,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "spell",
+            "unit": "player",
+            "use_genericShowOn": true,
+            "use_spellName": true,
+            "use_track": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10
+      },
+      "uid": "CeNKWqhUbP(",
+      "url": "https://wago.io/CiBZULRF_/3",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 3,
+      "wagoID": "CiBZULRF_",
+      "width": 32,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -1165,7 +2742,7 @@
       "iconSource": -1,
       "id": "stimulus_resto_druid_barkskin",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
       "keepAspectRatio": false,
       "load": {
@@ -1191,10 +2768,13 @@
         "use_vehicleUi": false
       },
       "parent": "stimulus_resto_druid_right_cds",
-      "progressSource": [-1, ""],
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -1203,17 +2783,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -1225,7 +2815,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -1239,7 +2834,7 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
@@ -1260,11 +2855,11 @@
         "activeTriggerMode": -10
       },
       "uid": "7)dApkbWxIR",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -1303,13 +2898,23 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -1331,7 +2936,7 @@
       "iconSource": -1,
       "id": "stimulus_resto_druid_renewal",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
       "keepAspectRatio": false,
       "load": {
@@ -1360,10 +2965,13 @@
         "use_vehicleUi": false
       },
       "parent": "stimulus_resto_druid_right_cds",
-      "progressSource": [-1, ""],
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -1372,17 +2980,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -1394,7 +3012,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -1408,7 +3031,7 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
@@ -1429,11 +3052,11 @@
         "activeTriggerMode": -10
       },
       "uid": "9DEg4BZwYRP",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -1472,13 +3095,23 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -1500,7 +3133,7 @@
       "iconSource": -1,
       "id": "stimulus_resto_druid_stampeding_roar",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
       "keepAspectRatio": false,
       "load": {
@@ -1529,10 +3162,13 @@
         "use_vehicleUi": false
       },
       "parent": "stimulus_resto_druid_right_cds",
-      "progressSource": [-1, ""],
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -1541,17 +3177,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -1563,7 +3209,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -1577,7 +3228,7 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
@@ -1598,11 +3249,11 @@
         "activeTriggerMode": -10
       },
       "uid": "uyMGihx)71Z",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -1641,13 +3292,23 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -1669,7 +3330,7 @@
       "iconSource": -1,
       "id": "stimulus_resto_druid_wild_charge",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
       "keepAspectRatio": false,
       "load": {
@@ -1698,10 +3359,13 @@
         "use_vehicleUi": false
       },
       "parent": "stimulus_resto_druid_right_cds",
-      "progressSource": [-1, ""],
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -1710,17 +3374,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -1732,7 +3406,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -1746,7 +3425,7 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
@@ -1767,11 +3446,11 @@
         "activeTriggerMode": -10
       },
       "uid": "xMdPtAEA3m6",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -1810,13 +3489,23 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -1838,7 +3527,7 @@
       "iconSource": -1,
       "id": "stimulus_resto_druid_dash",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
       "keepAspectRatio": false,
       "load": {
@@ -1864,10 +3553,13 @@
         "use_vehicleUi": false
       },
       "parent": "stimulus_resto_druid_right_cds",
-      "progressSource": [-1, ""],
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -1876,17 +3568,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -1898,7 +3600,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -1912,7 +3619,7 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
@@ -1933,11 +3640,11 @@
         "activeTriggerMode": -10
       },
       "uid": "M2m0WXNMZ2X",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -1976,13 +3683,23 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -2004,7 +3721,7 @@
       "iconSource": -1,
       "id": "stimulus_resto_druid_vortex",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
       "keepAspectRatio": false,
       "load": {
@@ -2033,10 +3750,13 @@
         "use_vehicleUi": false
       },
       "parent": "stimulus_resto_druid_right_cds",
-      "progressSource": [-1, ""],
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -2045,17 +3765,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -2067,7 +3797,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -2081,7 +3816,7 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
@@ -2102,11 +3837,11 @@
         "activeTriggerMode": -10
       },
       "uid": "Jh()TrFkrZZ",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -2146,10 +3881,20 @@
       },
       "arcLength": 360,
       "authorOptions": [],
-      "backdropColor": [1, 1, 1, 0.5],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
       "border": false,
       "borderBackdrop": "Blizzard Tooltip",
-      "borderColor": [0, 0, 0, 1],
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
       "borderEdge": "Square Full White",
       "borderInset": 1,
       "borderOffset": 4,
@@ -2160,8 +3905,7 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Lifebloom",
-        "Efflorescence",
+        "Abundance",
         "Druid: Treeform 2",
         "Druid: Treeform 1"
       ],
@@ -2172,7 +3916,7 @@
       "grow": "DOWN",
       "id": "stimulus_resto_druid_left_cds",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "limit": 5,
       "load": {
         "class": {
@@ -2195,7 +3939,7 @@
       "rowSpace": 1,
       "scale": 1,
       "selfPoint": "TOP",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "sort": "none",
       "sortHybridTable": {
         "Druid: Treeform 1": false,
@@ -2208,7 +3952,7 @@
       "stagger": 0,
       "stepAngle": 15,
       "subRegions": [],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": [
         {
           "trigger": {
@@ -2225,9 +3969,9 @@
         }
       ],
       "uid": "H76m1Nls3YO",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useLimit": false,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "xOffset": -220,
       "yOffset": 120
@@ -2264,7 +4008,12 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [],
       "config": [],
       "cooldown": true,
@@ -2276,9 +4025,9 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Lifebloom",
+      "id": "Abundance",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -2297,7 +4046,7 @@
         },
         "talent": {
           "multi": {
-            "103100": true
+            "103105": true
           }
         },
         "use_class_and_spec": true,
@@ -2308,10 +4057,13 @@
         "use_vehicleUi": false
       },
       "parent": "stimulus_resto_druid_left_cds",
-      "progressSource": [-1, ""],
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -2320,17 +4072,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "CENTER",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
-          "text_fontSize": 12,
+          "text_fontSize": 27,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -2342,7 +4104,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -2356,11 +4123,13 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": ["33763"],
+            "auranames": [
+              "207640"
+            ],
             "debuffType": "HELPFUL",
             "event": "Health",
             "matchesShowOn": "showOnActive",
@@ -2378,197 +4147,12 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "UgV0T7simn5",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "uid": "xvAoosxwZWa",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
-      "wagoID": "CiBZULRF_",
-      "width": 32,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 1,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "color": [1, 1, 1, 1],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "color",
-              "value": [0.5, 0.5, 0.5, 1]
-            }
-          ],
-          "check": {
-            "trigger": 1,
-            "value": 0,
-            "variable": "buffed"
-          }
-        }
-      ],
-      "config": [],
-      "cooldown": true,
-      "cooldownEdge": false,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": false,
-      "desaturate": false,
-      "frameStrata": 1,
-      "height": 32,
-      "icon": true,
-      "iconSource": -1,
-      "id": "Efflorescence",
-      "information": [],
-      "internalVersion": 78,
-      "inverse": false,
-      "keepAspectRatio": false,
-      "load": {
-        "class": {
-          "multi": []
-        },
-        "class_and_spec": {
-          "multi": [],
-          "single": 105
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "talent": {
-          "multi": {
-            "103111": true
-          }
-        },
-        "use_class_and_spec": true,
-        "use_never": false,
-        "use_petbattle": false,
-        "use_talent": false,
-        "use_vehicle": false,
-        "use_vehicleUi": false
-      },
-      "parent": "stimulus_resto_druid_left_cds",
-      "progressSource": [-1, ""],
-      "regionType": "icon",
-      "selfPoint": "CENTER",
-      "semver": "1.0.1",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
-          "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
-          "text_fixedWidth": 64,
-          "text_font": "Friz Quadrata TT",
-          "text_fontSize": 12,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%s",
-          "text_text_format_s_format": "none",
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "glow": false,
-          "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
-          "glowDuration": 1,
-          "glowFrequency": 0.25,
-          "glowLength": 10,
-          "glowLines": 8,
-          "glowScale": 1,
-          "glowThickness": 1,
-          "glowType": "buttonOverlay",
-          "glowXOffset": 0,
-          "glowYOffset": 0,
-          "type": "subglow",
-          "useGlowColor": false
-        }
-      ],
-      "tocversion": 110005,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "auranames": ["145205"],
-            "debuffType": "HELPFUL",
-            "event": "Health",
-            "matchesShowOn": "showOnMissing",
-            "names": [],
-            "ownOnly": true,
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "aura2",
-            "unit": "player",
-            "unitExists": false,
-            "useName": true
-          },
-          "untrigger": []
-        },
-        "2": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Conditions",
-            "type": "unit",
-            "unit": "player",
-            "use_absorbHealMode": true,
-            "use_absorbMode": true,
-            "use_incombat": true,
-            "use_unit": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": -10
-      },
-      "uid": "mNmG)qyb7lt",
-      "url": "https://wago.io/CiBZULRF_/2",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -2608,7 +4192,12 @@
       },
       "authorOptions": [],
       "auto": true,
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [],
       "config": [],
       "cooldown": true,
@@ -2628,7 +4217,7 @@
         "forceEvents": true,
         "ignoreOptionsEventErrors": true
       },
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -2768,7 +4357,11 @@
           "multi": []
         },
         "spec": {
-          "multi": [null, null, true],
+          "multi": [
+            null,
+            null,
+            true
+          ],
           "single": 4
         },
         "spellknown": 61882,
@@ -2793,10 +4386,13 @@
         "zoneIds": ""
       },
       "parent": "stimulus_resto_druid_left_cds",
-      "progressSource": [-1, ""],
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "stickyDuration": false,
       "subRegions": [
@@ -2806,17 +4402,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 0.84313725490196, 0, 1],
+          "text_color": [
+            1,
+            0.84313725490196,
+            0,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Expressway",
           "text_fontSize": 16,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -2828,7 +4434,12 @@
         {
           "glow": true,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -2842,11 +4453,13 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": ["Reforestation"],
+            "auranames": [
+              "Reforestation"
+            ],
             "debuffType": "HELPFUL",
             "event": "Health",
             "names": [],
@@ -2861,7 +4474,9 @@
         },
         "2": {
           "trigger": {
-            "auranames": ["Reforestation"],
+            "auranames": [
+              "Reforestation"
+            ],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Action Usable",
@@ -2893,11 +4508,11 @@
         "disjunctive": "all"
       },
       "uid": "VX8dmWWqus0",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -2937,7 +4552,12 @@
       },
       "authorOptions": [],
       "auto": true,
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [],
       "config": [],
       "cooldown": true,
@@ -2957,7 +4577,7 @@
         "forceEvents": true,
         "ignoreOptionsEventErrors": true
       },
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -3097,7 +4717,11 @@
           "multi": []
         },
         "spec": {
-          "multi": [null, null, true],
+          "multi": [
+            null,
+            null,
+            true
+          ],
           "single": 4
         },
         "spellknown": 61882,
@@ -3122,10 +4746,13 @@
         "zoneIds": ""
       },
       "parent": "stimulus_resto_druid_left_cds",
-      "progressSource": [-1, ""],
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "stickyDuration": false,
       "subRegions": [
@@ -3135,17 +4762,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 0.84313725490196, 0, 1],
+          "text_color": [
+            1,
+            0.84313725490196,
+            0,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Expressway",
           "text_fontSize": 16,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -3155,11 +4792,13 @@
           "type": "subtext"
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": ["Reforestation"],
+            "auranames": [
+              "Reforestation"
+            ],
             "debuffType": "HELPFUL",
             "event": "Health",
             "names": [],
@@ -3174,7 +4813,9 @@
         },
         "2": {
           "trigger": {
-            "auranames": ["Reforestation"],
+            "auranames": [
+              "Reforestation"
+            ],
             "debuffType": "HELPFUL",
             "duration": "1",
             "event": "Action Usable",
@@ -3206,11 +4847,11 @@
         "disjunctive": "all"
       },
       "uid": "DfAoSg5CwYW",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -3250,10 +4891,20 @@
       },
       "arcLength": 360,
       "authorOptions": [],
-      "backdropColor": [1, 1, 1, 0.5],
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
       "border": false,
       "borderBackdrop": "Blizzard Tooltip",
-      "borderColor": [0, 0, 0, 1],
+      "borderColor": [
+        0,
+        0,
+        0,
+        1
+      ],
       "borderEdge": "Square Full White",
       "borderInset": 1,
       "borderOffset": 4,
@@ -3264,23 +4915,22 @@
       "config": [],
       "constantFactor": "RADIUS",
       "controlledChildren": [
-        "Abundance",
-        "Swiftmend",
-        "Efflorescence 2",
         "Cenarion Ward",
-        "Flourish",
+        "Wild Growth 2",
+        "Swiftmend",
+        "Lifebloom",
         "Grove Guardians",
-        "Ironbark",
-        "Wild Growth"
+        "Efflorescence",
+        "Nature's Swiftness"
       ],
       "frameStrata": 1,
       "fullCircle": true,
-      "gridType": "LU",
-      "gridWidth": 5,
+      "gridType": "HU",
+      "gridWidth": 7,
       "grow": "GRID",
-      "id": "stimulus_resto_druid_main_cds",
+      "id": "stimulus_resto_druid_main",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "limit": 5,
       "load": {
         "class": {
@@ -3302,25 +4952,23 @@
       "rotation": 0,
       "rowSpace": 1,
       "scale": 1,
-      "selfPoint": "BOTTOMRIGHT",
-      "semver": "1.0.1",
+      "selfPoint": "BOTTOM",
+      "semver": "1.0.2",
       "sort": "none",
       "sortHybridTable": {
         "Abundance": false,
         "Cenarion Ward": false,
-        "Efflorescence 2": false,
         "Flourish": false,
         "Grove Guardians": false,
         "Ironbark": false,
-        "Swiftmend": false,
-        "Wild Growth": false
+        "Swiftmend": false
       },
       "source": "import",
       "space": 2,
       "stagger": 0,
       "stepAngle": 15,
       "subRegions": [],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": [
         {
           "trigger": {
@@ -3337,12 +4985,12 @@
         }
       ],
       "uid": "GpBB1Tttb8q",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useLimit": false,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
-      "xOffset": -240,
-      "yOffset": -120
+      "xOffset": 0,
+      "yOffset": -115
     },
     {
       "actions": {
@@ -3376,8 +5024,76 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
-      "conditions": [],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 2,
+            "value": 1,
+            "variable": "insufficientResources"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                0.5,
+                0.5,
+                0.5,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 2,
+            "value": 1,
+            "variable": "onCooldown"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "inverse",
+              "value": false
+            },
+            {
+              "property": "sub.3.glow",
+              "value": true
+            },
+            {
+              "property": "color",
+              "value": [
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "show"
+          }
+        }
+      ],
       "config": [],
       "cooldown": true,
       "cooldownEdge": false,
@@ -3388,10 +5104,10 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Abundance",
+      "id": "Cenarion Ward",
       "information": [],
-      "internalVersion": 78,
-      "inverse": false,
+      "internalVersion": 83,
+      "inverse": true,
       "keepAspectRatio": false,
       "load": {
         "class": {
@@ -3409,7 +5125,7 @@
         },
         "talent": {
           "multi": {
-            "103105": true
+            "103104": true
           }
         },
         "use_class_and_spec": true,
@@ -3419,11 +5135,14 @@
         "use_vehicle": false,
         "use_vehicleUi": false
       },
-      "parent": "stimulus_resto_druid_main_cds",
-      "progressSource": [-1, ""],
+      "parent": "stimulus_resto_druid_main",
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -3432,17 +5151,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -3454,7 +5183,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -3468,11 +5202,13 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": ["207640"],
+            "auranames": [
+              "102351"
+            ],
             "debuffType": "HELPFUL",
             "event": "Health",
             "matchesShowOn": "showOnActive",
@@ -3488,14 +5224,28 @@
           },
           "untrigger": []
         },
-        "activeTriggerMode": -10
+        "2": {
+          "trigger": {
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "realSpellName": "Cenarion Ward",
+            "spellName": 102351,
+            "type": "spell",
+            "use_genericShowOn": true,
+            "use_spellName": true,
+            "use_track": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10,
+        "disjunctive": "any"
       },
-      "uid": "xvAoosxwZWa",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "uid": "80QNIiweRcv",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -3534,13 +5284,237 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "insufficientResources"
+          }
+        },
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                0.5,
+                0.5,
+                0.5,
+                1
+              ]
+            }
+          ],
+          "check": {
+            "trigger": 1,
+            "value": 1,
+            "variable": "onCooldown"
+          }
+        }
+      ],
+      "config": [],
+      "cooldown": true,
+      "cooldownEdge": false,
+      "cooldownSwipe": true,
+      "cooldownTextDisabled": false,
+      "desaturate": false,
+      "frameStrata": 1,
+      "height": 32,
+      "icon": true,
+      "iconSource": -1,
+      "id": "Wild Growth 2",
+      "information": [],
+      "internalVersion": 83,
+      "inverse": true,
+      "keepAspectRatio": false,
+      "load": {
+        "class": {
+          "multi": []
+        },
+        "class_and_spec": {
+          "multi": [],
+          "single": 105
+        },
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "talent": {
+          "multi": {
+            "103283": true,
+            "103320": true
+          }
+        },
+        "use_class_and_spec": true,
+        "use_talent": false
+      },
+      "parent": "stimulus_resto_druid_main",
+      "progressSource": [
+        -1,
+        ""
+      ],
+      "regionType": "icon",
+      "selfPoint": "CENTER",
+      "semver": "1.0.2",
+      "subRegions": [
+        {
+          "type": "subbackground"
+        },
+        {
+          "anchorXOffset": 0,
+          "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
+          "rotateText": "NONE",
+          "text_automaticWidth": "Auto",
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "text_fixedWidth": 64,
+          "text_font": "Friz Quadrata TT",
+          "text_fontSize": 12,
+          "text_fontType": "OUTLINE",
+          "text_justify": "CENTER",
+          "text_selfPoint": "AUTO",
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "text_shadowXOffset": 0,
+          "text_shadowYOffset": 0,
+          "text_text": "%s",
+          "text_text_format_s_format": "none",
+          "text_visible": true,
+          "text_wordWrap": "WordWrap",
+          "type": "subtext"
+        },
+        {
+          "glow": false,
+          "glowBorder": false,
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "glowDuration": 1,
+          "glowFrequency": 0.25,
+          "glowLength": 10,
+          "glowLines": 8,
+          "glowScale": 1,
+          "glowThickness": 1,
+          "glowType": "buttonOverlay",
+          "glowXOffset": 0,
+          "glowYOffset": 0,
+          "type": "subglow",
+          "useGlowColor": false
+        }
+      ],
+      "tocversion": 110100,
+      "triggers": {
+        "1": {
+          "trigger": {
+            "debuffType": "HELPFUL",
+            "event": "Cooldown Progress (Spell)",
+            "genericShowOn": "showAlways",
+            "names": [],
+            "spellIds": [],
+            "spellName": 48438,
+            "subeventPrefix": "SPELL",
+            "subeventSuffix": "_CAST_START",
+            "type": "spell",
+            "unit": "player",
+            "use_genericShowOn": true,
+            "use_spellName": true,
+            "use_track": true
+          },
+          "untrigger": []
+        },
+        "activeTriggerMode": -10
+      },
+      "uid": "xjUnYpQX7BJ",
+      "url": "https://wago.io/CiBZULRF_/3",
+      "useAdjustededMax": false,
+      "useAdjustededMin": false,
+      "useCooldownModRate": true,
+      "version": 3,
+      "wagoID": "CiBZULRF_",
+      "width": 32,
+      "xOffset": 0,
+      "yOffset": 0,
+      "zoom": 0
+    },
+    {
+      "actions": {
+        "finish": [],
+        "init": [],
+        "start": []
+      },
+      "adjustedMax": "",
+      "adjustedMin": "",
+      "alpha": 1,
+      "anchorFrameType": "SCREEN",
+      "anchorPoint": "CENTER",
+      "animation": {
+        "finish": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "main": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        },
+        "start": {
+          "duration_type": "seconds",
+          "easeStrength": 3,
+          "easeType": "none",
+          "type": "none"
+        }
+      },
+      "authorOptions": [],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "color",
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -3562,7 +5536,7 @@
       "iconSource": -1,
       "id": "Swiftmend",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
       "keepAspectRatio": false,
       "load": {
@@ -3592,11 +5566,14 @@
         "use_vehicle": false,
         "use_vehicleUi": false
       },
-      "parent": "stimulus_resto_druid_main_cds",
-      "progressSource": [-1, ""],
+      "parent": "stimulus_resto_druid_main",
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -3605,17 +5582,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -3627,7 +5614,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -3641,7 +5633,7 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
@@ -3665,11 +5657,11 @@
         "activeTriggerMode": -10
       },
       "uid": "Tj2bN7fpy5r",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -3708,8 +5700,38 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
-      "conditions": [],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "conditions": [
+        {
+          "changes": [
+            {
+              "property": "sub.3.glow",
+              "value": true
+            }
+          ],
+          "check": {
+            "checks": [
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "buffed"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
+          }
+        }
+      ],
       "config": [],
       "cooldown": true,
       "cooldownEdge": false,
@@ -3720,9 +5742,9 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Efflorescence 2",
+      "id": "Lifebloom",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": false,
       "keepAspectRatio": false,
       "load": {
@@ -3741,7 +5763,7 @@
         },
         "talent": {
           "multi": {
-            "103111": true
+            "103100": true
           }
         },
         "use_class_and_spec": true,
@@ -3751,11 +5773,14 @@
         "use_vehicle": false,
         "use_vehicleUi": false
       },
-      "parent": "stimulus_resto_druid_main_cds",
-      "progressSource": [-1, ""],
+      "parent": "stimulus_resto_druid_main",
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -3764,17 +5789,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -3786,7 +5821,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -3800,21 +5840,23 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": ["145205"],
+            "auranames": [
+              "33763"
+            ],
             "debuffType": "HELPFUL",
             "event": "Health",
-            "matchesShowOn": "showOnActive",
+            "matchesShowOn": "showAlways",
             "names": [],
             "ownOnly": true,
             "spellIds": [],
             "subeventPrefix": "SPELL",
             "subeventSuffix": "_CAST_START",
             "type": "aura2",
-            "unit": "player",
+            "unit": "group",
             "unitExists": false,
             "useName": true
           },
@@ -3822,12 +5864,12 @@
         },
         "activeTriggerMode": -10
       },
-      "uid": "K6uIvipLbSq",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "uid": "UgV0T7simn5",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -3866,405 +5908,23 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
-            }
-          ],
-          "check": {
-            "trigger": 2,
-            "value": 1,
-            "variable": "insufficientResources"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "color",
-              "value": [0.5, 0.5, 0.5, 1]
-            }
-          ],
-          "check": {
-            "trigger": 2,
-            "value": 1,
-            "variable": "onCooldown"
-          }
-        },
-        {
-          "changes": [
-            {
-              "property": "inverse",
-              "value": false
-            },
-            {
-              "property": "sub.3.glow",
-              "value": true
-            },
-            {
-              "property": "color",
-              "value": [1, 1, 1, 1]
-            }
-          ],
-          "check": {
-            "trigger": 1,
-            "value": 1,
-            "variable": "show"
-          }
-        }
-      ],
-      "config": [],
-      "cooldown": true,
-      "cooldownEdge": false,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": false,
-      "desaturate": false,
-      "frameStrata": 1,
-      "height": 32,
-      "icon": true,
-      "iconSource": -1,
-      "id": "Cenarion Ward",
-      "information": [],
-      "internalVersion": 78,
-      "inverse": true,
-      "keepAspectRatio": false,
-      "load": {
-        "class": {
-          "multi": []
-        },
-        "class_and_spec": {
-          "multi": [],
-          "single": 105
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "talent": {
-          "multi": {
-            "103104": true
-          }
-        },
-        "use_class_and_spec": true,
-        "use_never": false,
-        "use_petbattle": false,
-        "use_talent": false,
-        "use_vehicle": false,
-        "use_vehicleUi": false
-      },
-      "parent": "stimulus_resto_druid_main_cds",
-      "progressSource": [-1, ""],
-      "regionType": "icon",
-      "selfPoint": "CENTER",
-      "semver": "1.0.1",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
-          "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
-          "text_fixedWidth": 64,
-          "text_font": "Friz Quadrata TT",
-          "text_fontSize": 12,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%s",
-          "text_text_format_s_format": "none",
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "glow": false,
-          "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
-          "glowDuration": 1,
-          "glowFrequency": 0.25,
-          "glowLength": 10,
-          "glowLines": 8,
-          "glowScale": 1,
-          "glowThickness": 1,
-          "glowType": "buttonOverlay",
-          "glowXOffset": 0,
-          "glowYOffset": 0,
-          "type": "subglow",
-          "useGlowColor": false
-        }
-      ],
-      "tocversion": 110005,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "auranames": ["102351"],
-            "debuffType": "HELPFUL",
-            "event": "Health",
-            "matchesShowOn": "showOnActive",
-            "names": [],
-            "ownOnly": true,
-            "spellIds": [],
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "aura2",
-            "unit": "player",
-            "unitExists": false,
-            "useName": true
-          },
-          "untrigger": []
-        },
-        "2": {
-          "trigger": {
-            "event": "Cooldown Progress (Spell)",
-            "genericShowOn": "showAlways",
-            "realSpellName": "Cenarion Ward",
-            "spellName": 102351,
-            "type": "spell",
-            "use_genericShowOn": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": -10,
-        "disjunctive": "any"
-      },
-      "uid": "80QNIiweRcv",
-      "url": "https://wago.io/CiBZULRF_/2",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "version": 2,
-      "wagoID": "CiBZULRF_",
-      "width": 32,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 1,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "color": [1, 1, 1, 1],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "color",
-              "value": [0.5, 0.5, 1, 1]
-            }
-          ],
-          "check": {
-            "trigger": 1,
-            "value": 0,
-            "variable": "spellUsable"
-          }
-        }
-      ],
-      "config": [],
-      "cooldown": true,
-      "cooldownEdge": false,
-      "cooldownSwipe": true,
-      "cooldownTextDisabled": false,
-      "desaturate": false,
-      "frameStrata": 1,
-      "height": 32,
-      "icon": true,
-      "iconSource": -1,
-      "id": "Flourish",
-      "information": [],
-      "internalVersion": 78,
-      "inverse": true,
-      "keepAspectRatio": false,
-      "load": {
-        "class": {
-          "multi": []
-        },
-        "class_and_spec": {
-          "multi": [],
-          "single": 105
-        },
-        "size": {
-          "multi": []
-        },
-        "spec": {
-          "multi": []
-        },
-        "talent": {
-          "multi": {
-            "103136": true,
-            "123776": true
-          }
-        },
-        "use_class_and_spec": true,
-        "use_never": false,
-        "use_petbattle": false,
-        "use_talent": false,
-        "use_vehicle": false,
-        "use_vehicleUi": false
-      },
-      "parent": "stimulus_resto_druid_main_cds",
-      "progressSource": [-1, ""],
-      "regionType": "icon",
-      "selfPoint": "CENTER",
-      "semver": "1.0.1",
-      "source": "import",
-      "subRegions": [
-        {
-          "type": "subbackground"
-        },
-        {
-          "anchorXOffset": 0,
-          "anchorYOffset": 0,
-          "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
-          "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
-          "text_fixedWidth": 64,
-          "text_font": "Friz Quadrata TT",
-          "text_fontSize": 12,
-          "text_fontType": "OUTLINE",
-          "text_justify": "CENTER",
-          "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
-          "text_shadowXOffset": 0,
-          "text_shadowYOffset": 0,
-          "text_text": "%s",
-          "text_text_format_s_format": "none",
-          "text_visible": true,
-          "text_wordWrap": "WordWrap",
-          "type": "subtext"
-        },
-        {
-          "glow": false,
-          "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
-          "glowDuration": 1,
-          "glowFrequency": 0.25,
-          "glowLength": 10,
-          "glowLines": 8,
-          "glowScale": 1,
-          "glowThickness": 1,
-          "glowType": "buttonOverlay",
-          "glowXOffset": 0,
-          "glowYOffset": 0,
-          "type": "subglow",
-          "useGlowColor": false
-        }
-      ],
-      "tocversion": 110005,
-      "triggers": {
-        "1": {
-          "trigger": {
-            "debuffType": "HELPFUL",
-            "event": "Cooldown Progress (Spell)",
-            "genericShowOn": "showOnCooldown",
-            "names": [],
-            "realSpellName": "Flourish",
-            "spellIds": [],
-            "spellName": 197721,
-            "subeventPrefix": "SPELL",
-            "subeventSuffix": "_CAST_START",
-            "type": "spell",
-            "unit": "player",
-            "use_genericShowOn": true,
-            "use_spellName": true,
-            "use_track": true
-          },
-          "untrigger": []
-        },
-        "activeTriggerMode": -10
-      },
-      "uid": "SeEMXhKtshk",
-      "url": "https://wago.io/CiBZULRF_/2",
-      "useAdjustededMax": false,
-      "useAdjustededMin": false,
-      "useCooldownModRate": true,
-      "version": 2,
-      "wagoID": "CiBZULRF_",
-      "width": 32,
-      "xOffset": 0,
-      "yOffset": 0,
-      "zoom": 0
-    },
-    {
-      "actions": {
-        "finish": [],
-        "init": [],
-        "start": []
-      },
-      "adjustedMax": "",
-      "adjustedMin": "",
-      "alpha": 1,
-      "anchorFrameType": "SCREEN",
-      "anchorPoint": "CENTER",
-      "animation": {
-        "finish": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "main": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        },
-        "start": {
-          "duration_type": "seconds",
-          "easeStrength": 3,
-          "easeType": "none",
-          "type": "none"
-        }
-      },
-      "authorOptions": [],
-      "color": [1, 1, 1, 1],
-      "conditions": [
-        {
-          "changes": [
-            {
-              "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -4286,7 +5946,7 @@
       "iconSource": -1,
       "id": "Grove Guardians",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
       "keepAspectRatio": false,
       "load": {
@@ -4316,11 +5976,14 @@
         "use_vehicle": false,
         "use_vehicleUi": false
       },
-      "parent": "stimulus_resto_druid_main_cds",
-      "progressSource": [-1, ""],
+      "parent": "stimulus_resto_druid_main",
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -4329,17 +5992,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -4351,7 +6024,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -4365,7 +6043,7 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
@@ -4389,11 +6067,11 @@
         "activeTriggerMode": -10
       },
       "uid": "pobp2RFqnd3",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -4432,19 +6110,44 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                0.5,
+                1
+              ]
+            },
+            {
+              "property": "sub.3.glow",
+              "value": true
             }
           ],
           "check": {
-            "trigger": 1,
-            "value": 0,
-            "variable": "spellUsable"
+            "checks": [
+              {
+                "trigger": 1,
+                "value": 0,
+                "variable": "buffed"
+              },
+              {
+                "trigger": -1,
+                "value": 1,
+                "variable": "incombat"
+              }
+            ],
+            "trigger": -2,
+            "variable": "AND"
           }
         }
       ],
@@ -4458,10 +6161,10 @@
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Ironbark",
+      "id": "Efflorescence",
       "information": [],
-      "internalVersion": 78,
-      "inverse": true,
+      "internalVersion": 83,
+      "inverse": false,
       "keepAspectRatio": false,
       "load": {
         "class": {
@@ -4479,7 +6182,7 @@
         },
         "talent": {
           "multi": {
-            "103141": true
+            "103111": true
           }
         },
         "use_class_and_spec": true,
@@ -4489,11 +6192,14 @@
         "use_vehicle": false,
         "use_vehicleUi": false
       },
-      "parent": "stimulus_resto_druid_main_cds",
-      "progressSource": [-1, ""],
+      "parent": "stimulus_resto_druid_main",
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
+      "semver": "1.0.2",
       "source": "import",
       "subRegions": [
         {
@@ -4502,17 +6208,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -4524,7 +6240,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -4538,33 +6259,36 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
+            "auranames": [
+              "145205"
+            ],
             "debuffType": "HELPFUL",
-            "event": "Cooldown Progress (Spell)",
-            "genericShowOn": "showOnCooldown",
+            "event": "Health",
+            "matchesShowOn": "showAlways",
             "names": [],
-            "realSpellName": "Ironbark",
+            "ownOnly": true,
             "spellIds": [],
-            "spellName": 102342,
             "subeventPrefix": "SPELL",
             "subeventSuffix": "_CAST_START",
-            "type": "spell",
+            "type": "aura2",
             "unit": "player",
-            "use_genericShowOn": true
+            "unitExists": false,
+            "useName": true
           },
           "untrigger": []
         },
         "activeTriggerMode": -10
       },
-      "uid": "BA)1NRM9FBl",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "uid": "mNmG)qyb7lt",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -4603,13 +6327,23 @@
         }
       },
       "authorOptions": [],
-      "color": [1, 1, 1, 1],
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
       "conditions": [
         {
           "changes": [
             {
               "property": "color",
-              "value": [0.5, 0.5, 1, 1]
+              "value": [
+                0.5,
+                0.5,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -4621,14 +6355,15 @@
         {
           "changes": [
             {
-              "property": "color",
-              "value": [0.5, 0.5, 0.5, 1]
+              "property": "cooldownSwipe",
+              "value": true
             }
           ],
           "check": {
+            "op": "==",
             "trigger": 2,
-            "value": 1,
-            "variable": "onCooldown"
+            "value": "0",
+            "variable": "charges"
           }
         },
         {
@@ -4643,7 +6378,12 @@
             },
             {
               "property": "color",
-              "value": [1, 1, 1, 1]
+              "value": [
+                1,
+                1,
+                1,
+                1
+              ]
             }
           ],
           "check": {
@@ -4655,17 +6395,17 @@
       ],
       "config": [],
       "cooldown": true,
-      "cooldownEdge": false,
-      "cooldownSwipe": true,
+      "cooldownEdge": true,
+      "cooldownSwipe": false,
       "cooldownTextDisabled": false,
       "desaturate": false,
       "frameStrata": 1,
       "height": 32,
       "icon": true,
       "iconSource": -1,
-      "id": "Wild Growth",
+      "id": "Nature's Swiftness",
       "information": [],
-      "internalVersion": 78,
+      "internalVersion": 83,
       "inverse": true,
       "keepAspectRatio": false,
       "load": {
@@ -4684,22 +6424,20 @@
         },
         "talent": {
           "multi": {
-            "103320": true
+            "103101": true
           }
         },
         "use_class_and_spec": true,
-        "use_never": false,
-        "use_petbattle": false,
-        "use_talent": false,
-        "use_vehicle": false,
-        "use_vehicleUi": false
+        "use_talent": false
       },
-      "parent": "stimulus_resto_druid_main_cds",
-      "progressSource": [-1, ""],
+      "parent": "stimulus_resto_druid_main",
+      "progressSource": [
+        -1,
+        ""
+      ],
       "regionType": "icon",
       "selfPoint": "CENTER",
-      "semver": "1.0.1",
-      "source": "import",
+      "semver": "1.0.2",
       "subRegions": [
         {
           "type": "subbackground"
@@ -4707,17 +6445,27 @@
         {
           "anchorXOffset": 0,
           "anchorYOffset": 0,
+          "anchor_point": "INNER_BOTTOMRIGHT",
           "rotateText": "NONE",
-          "text_anchorPoint": "INNER_BOTTOMRIGHT",
           "text_automaticWidth": "Auto",
-          "text_color": [1, 1, 1, 1],
+          "text_color": [
+            1,
+            1,
+            1,
+            1
+          ],
           "text_fixedWidth": 64,
           "text_font": "Friz Quadrata TT",
           "text_fontSize": 12,
           "text_fontType": "OUTLINE",
           "text_justify": "CENTER",
           "text_selfPoint": "AUTO",
-          "text_shadowColor": [0, 0, 0, 1],
+          "text_shadowColor": [
+            0,
+            0,
+            0,
+            1
+          ],
           "text_shadowXOffset": 0,
           "text_shadowYOffset": 0,
           "text_text": "%s",
@@ -4729,7 +6477,12 @@
         {
           "glow": false,
           "glowBorder": false,
-          "glowColor": [1, 1, 1, 1],
+          "glowColor": [
+            1,
+            1,
+            1,
+            1
+          ],
           "glowDuration": 1,
           "glowFrequency": 0.25,
           "glowLength": 10,
@@ -4743,11 +6496,13 @@
           "useGlowColor": false
         }
       ],
-      "tocversion": 110005,
+      "tocversion": 110100,
       "triggers": {
         "1": {
           "trigger": {
-            "auranames": ["48438"],
+            "auranames": [
+              "132158"
+            ],
             "debuffType": "HELPFUL",
             "event": "Health",
             "matchesShowOn": "showOnActive",
@@ -4767,22 +6522,23 @@
           "trigger": {
             "event": "Cooldown Progress (Spell)",
             "genericShowOn": "showAlways",
-            "realSpellName": "Wild Growth",
-            "spellName": 48438,
+            "spellName": 132158,
             "type": "spell",
-            "use_genericShowOn": true
+            "use_genericShowOn": true,
+            "use_spellName": true,
+            "use_track": true
           },
           "untrigger": []
         },
         "activeTriggerMode": -10,
         "disjunctive": "any"
       },
-      "uid": ")LIv7fYVrtA",
-      "url": "https://wago.io/CiBZULRF_/2",
+      "uid": "twhRuuT4kmY",
+      "url": "https://wago.io/CiBZULRF_/3",
       "useAdjustededMax": false,
       "useAdjustededMin": false,
       "useCooldownModRate": true,
-      "version": 2,
+      "version": 3,
       "wagoID": "CiBZULRF_",
       "width": 32,
       "xOffset": 0,
@@ -4820,10 +6576,20 @@
       }
     },
     "authorOptions": [],
-    "backdropColor": [1, 1, 1, 0.5],
+    "backdropColor": [
+      1,
+      1,
+      1,
+      0.5
+    ],
     "border": false,
     "borderBackdrop": "Blizzard Tooltip",
-    "borderColor": [0, 0, 0, 1],
+    "borderColor": [
+      0,
+      0,
+      0,
+      1
+    ],
     "borderEdge": "Square Full White",
     "borderInset": 1,
     "borderOffset": 4,
@@ -4831,15 +6597,16 @@
     "conditions": [],
     "config": [],
     "controlledChildren": [
-      "stimulus_resto_druid_big_cds",
+      "stimulus_resto_tranquil_mind",
+      "stimulus_resto_druid_cds",
       "stimulus_resto_druid_right_cds",
       "stimulus_resto_druid_left_cds",
-      "stimulus_resto_druid_main_cds"
+      "stimulus_resto_druid_main"
     ],
     "frameStrata": 1,
     "id": "Stimulus_Resto_Druid",
     "information": [],
-    "internalVersion": 78,
+    "internalVersion": 83,
     "load": {
       "class": {
         "multi": []
@@ -4857,10 +6624,10 @@
     "regionType": "group",
     "scale": 1,
     "selfPoint": "CENTER",
-    "semver": "1.0.1",
+    "semver": "1.0.2",
     "source": "import",
     "subRegions": [],
-    "tocversion": 110005,
+    "tocversion": 110100,
     "triggers": [
       {
         "trigger": {
@@ -4877,14 +6644,14 @@
       }
     ],
     "uid": "I4p5YcVY0YF",
-    "url": "https://wago.io/CiBZULRF_/2",
-    "version": 2,
+    "url": "https://wago.io/CiBZULRF_/3",
+    "version": 3,
     "wagoID": "CiBZULRF_",
     "xOffset": 0,
     "yOffset": -50
   },
   "m": "d",
-  "s": "5.17.4",
+  "s": "5.19.4",
   "v": 2000,
   "wagoID": "CiBZULRF_"
 }
